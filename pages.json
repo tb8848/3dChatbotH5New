@@ -1,0 +1,207 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+		    "path" : "pages/login",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false,
+				"navigationStyle":"custom"
+		    }
+		    
+		},
+		{
+			"path": "pages/index/console",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle":"custom"
+			}
+		}
+	    
+        ,{
+            "path" : "pages/index/bills",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/pan",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/wechat",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/setup",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/custom/myTabBar",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/setup/blacklist",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "黑名单",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/setup/updown-points",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "上下分记录",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/player/buyList",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,				
+				"navigationStyle":"custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/player/upDownList",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/player/report",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/setup/setOdds",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "赔率设置",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/setup/operationLog",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "操作记录",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/wechat_v2",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/setup/sendFormat",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "作业格式",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/pan_login",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "盘口",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom"
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#2E61EE",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/index/console",
+			"iconPath": "static/images/main.png",
+			"selectedIconPath": "static/images/main-s.png",
+			"text": "控制台"
+		}, {
+			"pagePath": "pages/index/pan_login",//pages/index/pan
+			"iconPath": "static/images/pank.png",
+			"selectedIconPath": "static/images/pank-s.png",
+			"text": "盘口"
+		}, {
+			"pagePath": "pages/index/bills",
+			"iconPath": "static/images/baobiao.png",
+			"selectedIconPath": "static/images/baobiao-s.png",
+			"text": "账单"
+		}
+		, {
+			"pagePath": "pages/index/wechat_v2",
+			"iconPath": "static/images/weixin-1.png",
+			"selectedIconPath": "static/images/weixin-s.png",
+			"text": "微信"
+		}
+		, {
+			"pagePath": "pages/index/setup",
+			"iconPath": "static/images/sz.png",
+			"selectedIconPath": "static/images/sz-s.png",
+			"text": "设置"
+		}
+		]
+	}
+
+}
