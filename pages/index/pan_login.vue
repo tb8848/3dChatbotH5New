@@ -75,7 +75,11 @@
 					更新时间：{{updateTime}}
 				</view>
 			</view>
-			
+			<view style="margin-top: 15px;">
+				<view style="padding: 5px 10px;border-radius: 15px;width: 80px;text-align: center;color: white;background-color: #F1BF94;margin: auto;font-size: 15px;" @click="fanhui()">
+					返回
+				</view>
+			</view>
 			<!-- 提示窗 -->
 			<uni-popup ref="alertDialog" type="dialog">
 				<uni-popup-dialog confirmText="确认" cancelText="取消" title="提示" content="是否退出网盘？" @confirm="dialogConfirm"
@@ -163,6 +167,9 @@
 			
 		},
 		methods: {
+			fanhui(){
+				uni.navigateBack();
+			},
 			//查看
 			viewPan(item){
 				uni.setStorageSync('pkToken',item.login3dToken);
