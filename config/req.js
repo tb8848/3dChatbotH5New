@@ -22,7 +22,7 @@ const mainUrl = "https://hn3dhn01hk.com:8888";//总后台地址（盘口域名�
 // const wechaty_api_url="http://192.168.10.41:9194/bot";
 // const mainUrl = "http://127.0.0.1:8888";//总后台地址（盘口域名检测）http://192.168.1.94:8888
 
-const forMatUrl = "http://3dp3.3dp3jian2.xyz";//https://vip.colourswin.com
+const forMatUrl = "https://3dp3.3dp3jian2.xyz";//https://vip.colourswin.com
 
 export function getResponseData(url,method,params,successCallback) {
  
