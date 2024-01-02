@@ -169,7 +169,7 @@
 				</view>
 				<view style="text-align: center;margin:40rpx">
 					<view v-if="headimg==''"><img src="../../static/logo.png" /></view>
-					<view v-else><img :src="headimg" style="width: 71px;height: 71px;border-radius: 5px;"/></view>
+					<view v-else><img :src="'https://images.weserv.nl/?url='+headimg" style="width: 71px;height: 71px;border-radius: 5px;"/></view>
 					<view style="margin-top:10rpx;color: #2e61ee;font-size: 15px;" @click="chooseImg()"><text>随机更换头像</text></view>
 				</view>
 				<view style="font-size: 15px;margin-top: 30px;">

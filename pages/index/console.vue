@@ -86,7 +86,7 @@
 						<view style="display: flex;justify-content: space-around;align-items: center;padding: 14rpx;">
 							<view style="width: 50%;display: flex;justify-content: flex-start;align-items: center;">
 								<view v-if="player.headimg!=null && player.headimg!=''">
-									<img :src="player.headimg" style="height: 80rpx;width: 80rpx;" />
+									<img :src="'https://images.weserv.nl/?url='+player.headimg" style="height: 80rpx;width: 80rpx;" />
 								</view>
 								<view v-else><img src="../../static/logo.png" style="height: 80rpx;width: 80rpx;"/></view>
 								<view style="margin-left:10rpx">

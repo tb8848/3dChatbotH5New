@@ -2,18 +2,19 @@
 //const baseUrl = "http://45.195.145.20:9998/vip"
 //const wsUrl = "ws://45.195.145.20:8086/app"
 
-//生产
+//生产（新服务器）
 const baseUrl = "https://vip.3dp3aabb.com:9792/bot";
 const wsUrl = "wss://vip.3dp3aabb.com:9794/app";
 const host = "http://vip.3dp3aabb.com:9792";
 const wechaty_api_url="http://vip.3dp3aabb.com:9794/bot";
 const mainUrl = "https://hn3dhn01hk.com:8888";//总后台地址（盘口域名检测）
 
+//生产（老服务器）
 // const baseUrl = "https://vip.colourswin.com:9192/bot";
 // const wsUrl = "wss://vip.colourswin.com:9194/app";
 // const host = "http://vip.colourswin.com:9192";
 // const wechaty_api_url="http://vip.colourswin.com:9194/bot";
-// const mainUrl = "http://hn3dhn01hk.com:8888";//总后台地址（盘口域名检测）
+// const mainUrl = "https://hn3dhn01hk.com:8888";//总后台地址（盘口域名检测）
 
 //本地
 // const baseUrl = "http://192.168.10.41:9192/bot";
