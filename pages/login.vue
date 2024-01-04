@@ -44,9 +44,9 @@
 		onLoad() {
 			const token = uni.getStorageSync("token");
 			if(token!=null && token!="" ){
-				uni.switchTab({
-					url:'/pages/index/console'
-				})				
+				// uni.switchTab({
+				// 	url:'/pages/index/console'
+				// })
 			}else{
 				this.isLogin = false;
 			}
@@ -78,10 +78,16 @@
 				},function(res){
 					if(res.code==0){
 						uni.setStorageSync('token',res.data.token);
-						uni.setStorageSync('uname',res.data.uname);						
-						uni.switchTab({
-							url:'/pages/index/console'
-						})	
+						uni.setStorageSync('uname',res.data.uname);
+						if(res.data.initPwd == 0){
+							uni.navigateTo({
+								url:"/pages/updatePassword"
+							})
+						}else{
+							uni.switchTab({
+								url:'/pages/index/console'
+							})	
+						}
 					}else{
 						if(res.msg=="" || res.msg==null || res.msg==undefined){
 							showToastTip("用户名或密码错误！");

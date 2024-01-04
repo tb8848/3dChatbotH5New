@@ -648,7 +648,7 @@
 					showToastTip("确认密码不能为空");
 					return;
 				}
-				if(this.pwds.newpwd1!=this.pwds.newpwd1){
+				if(this.pwds.newpwd!=this.pwds.newpwd1){
 					showToastTip("两次输入的新密码不一致");
 					return;
 				}

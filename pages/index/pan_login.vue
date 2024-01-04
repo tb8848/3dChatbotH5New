@@ -157,6 +157,8 @@
 			stopMusic();
 			this.verifyBotUserExpire();
 			this.isPanLogin();
+			this.accountList = [];
+			this.emptyGrids = this.initGrids;
 			this.getPanList();
 			const that = this;
 			if(this.viewId != ""){
@@ -243,6 +245,7 @@
 							that.accountList = res.data;
 							that.emptyGrids = that.initGrids-length;
 						}else{
+							that.accountList = [];
 							that.emptyGrids = that.initGrids;
 						}
 					}

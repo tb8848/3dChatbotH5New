@@ -148,7 +148,7 @@
 						<view style="width: 100%;">
 							<view style="width: 100%;margin-bottom: 8px;display: flex;justify-content: space-between;align-items: center;">
 								<view style="display: flex;align-items: center;">
-									<image class="dummyImage" :src="item.headimg"></image>
+									<image class="dummyImage" :src="'https://images.weserv.nl/?url='+item.headimg"></image>
 									<text class="dummyText">{{item.nickname}}</text>
 								</view>
 								<view class="dummyButton">
@@ -198,7 +198,7 @@
 						<view style="padding-top: 1px;box-sizing: border-box;">
 							<view style="width: 100%;background-color: #fff;padding: 12px 9px 12px 11px;margin: 0 auto;position: relative;display: flex;align-items: flex-start;box-sizing: border-box;">
 								<view style="margin-right: 5px;">
-									<image :src="item.playerHeadImg" style="width: 28px;height: 28px;border-radius: 6px;"></image>
+									<image :src="'https://images.weserv.nl/?url='+item.playerHeadImg" style="width: 28px;height: 28px;border-radius: 6px;"></image>
 								</view>
 								<view style="flex: 1;width: 350px;">
 									<view style="display: flex;justify-content: space-between;align-items: space-between;width: 100%;">
@@ -236,7 +236,7 @@
 			<scroll-view :style="{'height':(winHeight-320)+'px'}" scroll-y="true" lower-threshold="10" @scrolltolower="loadMoreBuyList" v-if="allBuyList.length > 0">
 				<view v-for="(item,index) in allBuyList" style="display: flex;padding:10px;border-bottom: 1px solid #DCDFE6;background-color: #fff;">							
 					 <view style="width: 12%;">
-						<view><img :src="item.player.headimg" style="width: 30px;height: 30px;border-radius: 5px;" /></view>
+						<view><img :src="'https://images.weserv.nl/?url='+item.player.headimg" style="width: 30px;height: 30px;border-radius: 5px;" /></view>
 						<view style="margin:10px 0px;text-align: center;color:#e04a48;display: flex;" v-if="item.buyStatus==0" @click="tuidan(item)">
 							<view>
 								<image src="../../static/images/tuidan.png" style="width: 14px;height: 14px;"></image>
